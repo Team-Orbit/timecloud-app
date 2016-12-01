@@ -1,7 +1,6 @@
 {
-	"name": "timcloud",
+	"name": "timecloud-app",
 	"description": "TimeCloud developed for FAC",
-	"logo": "",
-	"keywords": ["TimeCloud", "Node", "Express"],
-	"image": ""
+	"repository": "https://github.com/Team-Orbit/TimeCloud",
+	"keywords": ["TimeCloud", "Node", "Express"]	
 }

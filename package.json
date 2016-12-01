@@ -1,5 +1,5 @@
 {
-  "name": "timecloud",
+  "name": "timecloud-app",
   "version": "0.1.1",
   "main": "server/app.js",
   "dependencies": {
