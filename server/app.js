@@ -12,7 +12,8 @@ var mongoose = require('mongoose');
 var config = require('./config/environment');
 
 // Connect to database
-mongoose.connect(config.mongo.uri, config.mongo.options);
+//mongoose.connect(config.mongo.uri, config.mongo.options);
+mongoose.connect('mongodb://teamorbit:teamorbit@ds117348.mlab.com:17348/heroku_mx279h6b');
 
 // Populate DB with sample data
 if(config.seedDB) { require('./config/seed'); }

@@ -15,8 +15,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri:    'mongodb://teamorbit:teamorbit@ds117348.mlab.com:17348/heroku_mx279h6b' ||
-            process.env.MONGOLAB_URI ||
+    uri:    process.env.MONGOLAB_URI ||
             process.env.MONGODB_URI ||
             process.env.MONGOHQ_URL ||
             process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
