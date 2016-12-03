@@ -13,7 +13,7 @@ var config = require('./config/environment');
 
 // Connect to database
 //mongoose.connect(config.mongo.uri, config.mongo.options);
-var dbURI = 'mongodb://teamorbit:teamorbit@ds117348.mlab.com:17348/heroku_mx279h6b';
+var dbURI = 'mongodb://heroku_mx279h6b:1dftcdhd4i8bodfegc6p4gp3v0@ds117348.mlab.com:17348/heroku_mx279h6b';
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGOLAB_URI;
 }
