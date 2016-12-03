@@ -15,7 +15,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri:    'mongodb://heroku_mx279h6b:1dftcdhd4i8bodfegc6p4gp3v0@ds117348.mlab.com:17348/heroku_mx279h6b'
+    uri:    'mongodb://teamorbit:1dftcdhd4i8bodfegc6p4gp3v0@ds117348.mlab.com:17348/heroku_mx279h6b'
             //'mongodb://teamorbit:teamorbit@ds117348.mlab.com:17348/heroku_mx279h6b' ||
             //process.env.MONGOLAB_URI ||
             //process.env.MONGODB_URI ||
