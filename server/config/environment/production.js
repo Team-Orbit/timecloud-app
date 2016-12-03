@@ -19,6 +19,7 @@ module.exports = {
             process.env.MONGODB_URI ||
             process.env.MONGOHQ_URL ||
             process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
-            'mongodb://localhost/tttime'
+            'mongodb://localhost/tttime' ||
+            'mongodb://heroku_mx279h6b:1dftcdhd4i8bodfegc6p4gp3v0@ds117348.mlab.com:17348/heroku_mx279h6b'
   }
 };
