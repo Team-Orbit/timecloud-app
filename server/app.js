@@ -12,13 +12,7 @@ var mongoose = require('mongoose');
 var config = require('./config/environment');
 
 // Connect to database
-//mongoose.connect(config.mongo.uri, config.mongo.options);
-var dbURI = 'mongodb://teamorbit:teamorbit@ds117348.mlab.com:17348/heroku_mx279h6b';
-if (process.env.NODE_ENV === 'production') {
-    dbURI = process.env.MONGOLAB_URI;
-}
-mongoose.connect(dbURI);
-
+mongoose.connect(config.mongo.uri, config.mongo.options);
 
 // Populate DB with sample data
 if(config.seedDB) { require('./config/seed'); }
