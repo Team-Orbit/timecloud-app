@@ -2,3 +2,4 @@ node_modules
 .tmp
 .idea
 client/bower_components
+node_modules
