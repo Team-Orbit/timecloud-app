@@ -4,6 +4,24 @@ angular.module('tttimeApp')
   .controller('MainCtrl', function ($scope, Auth, Workentry) {
     $scope.workEntries = [];
     $scope.newEntry = {};
+    $scope.project = ["Euro Project One", "Euro Project Two", "Euro Project Three"];
+    /*$scope.project = [{
+
+      "Projects": {
+          "NAME": [
+              "Euro One",
+              "Euro Two",
+              "Euro Three"
+          ]},
+      "Package": {
+          "NAME": [
+              "Pack One",
+              "Pack Two",
+              "Pack Three"
+          ]}
+    }];*/
+    $scope.package = ["Package One", "Package Two", "Package Three"];
+    $scope.names = ["Emil", "Tobias", "Linus"];
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.datePickerOpened = false;
     $scope.dateHourMap= {};
