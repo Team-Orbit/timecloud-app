@@ -13,13 +13,21 @@
     letter-spacing: -1px;
 }
 
+#allctime {
+    color: #f40000;
+}
+
+#remainTime {
+    color: #0bef07;
+}
+
 .hero-unit {
     position: relative;
     padding: 30px 15px;
     color: #F5F5F5;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    background: #2c7c5c;
+    background: #4c4947;
 }
 
 .footer {

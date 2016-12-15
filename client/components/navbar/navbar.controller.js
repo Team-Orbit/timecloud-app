@@ -3,7 +3,7 @@
 angular.module('tttimeApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu = [{
-      'title': 'Home',
+      'title': 'Log Hours',
       'link': '/'
     },
     {

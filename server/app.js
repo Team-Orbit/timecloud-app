@@ -13,7 +13,6 @@ var config = require('./config/environment');
 
 // Connect to database
 mongoose.connect(config.mongo.uri, config.mongo.options);
-//mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/tttime');
 
 // Populate DB with sample data
 if(config.seedDB) { require('./config/seed'); }

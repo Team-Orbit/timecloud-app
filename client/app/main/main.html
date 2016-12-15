@@ -2,7 +2,7 @@
 
 <header class="hero-unit" id="banner">
   <div class="container">
-    <h1>Time Cloud</h1>
+    <img src="assets/images/tclogo.png">
   </div>
 </header>
 
@@ -11,40 +11,26 @@
     <h2>Please log in to use Time Cloud</h2>
   </div>
   <div class="row" ng-show="isLoggedIn()">
-    <!--<div class="col-xs-12 col-sm-3 hidden-print">
-      <h3 class="page-header">Projects</h3>
-
-     
-
-        <div class="form-group">
-        Select Project:
-        <div class="input-group">
-        <select class="form-control" ng-model="newEntry.project" ng-options="item for item in project" ng-required="true"></select>
-        </div>  
-        </div>
    
+   <div class="col-xs-12 col-sm-12 ">
+   <h4 class="page-header hidden-print"> BESECURE (Sample Project) </h4>
 
-    </div>-->
-
+      <div class="col-xs-12 col-sm-3 hidden-print">
+      Allocated Time: <span id="allctime">{{allocatedTime}} Hours</span>
+      </div>
+    </div>
 
     <div class="col-xs-12 col-sm-8 ">
       <h3 class="page-header hidden-print">Add new entry</h3>
       <form class="hidden-print" name="newEntryForm" ng-submit="addEntry(newEntryForm)">
 
-      <div class="col-xs-12 col-sm-3 hidden-print">
+            <div class="col-xs-12 col-sm-3 hidden-print">
              <div class="form-group">
-              Select Project:
+              Select Work Package:
               <div class="input-group">
               <select class="form-control" ng-model="newEntry.project" ng-options="item for item in project" ng-required="true"></select>
               </div>  
-              <!--
-             
-              <div class="input-group">
-              <select class="form-control" ng-model="newEntry.project" ng-options="item for item in project[0].Projects.NAME" ng-required="true"></select>
-              </div>  
-              
-              <h4>{{project[0].Package.NAME[1]}}</h4>-->
-           </div>   
+           </div>
       </div>
 
       
@@ -68,11 +54,7 @@
           </div>
         </div>
       </div>
-<!--==================-->
-    
 
-
-<!--==================--> 
       <div class='col-sm-10'>
         <div class="form-group">
           Notes:
@@ -103,7 +85,7 @@
 
           <span ng-if="!entry.editMode">
             <strong>{{entry.date | date:'dd MMM yyyy'}}</strong> - {{entry.hours}} hours<br>
-<!--HERE--> <span>Project: {{entry.project}}<br>          
+            <span><strong>Work Package:</strong> {{entry.project}}</span><br>          
             <span class="text-muted">{{entry.desc}}</span>
           </span>
 
