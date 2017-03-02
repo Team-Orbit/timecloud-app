@@ -1,41 +1,28 @@
 TimeCloud App
 ====
 
-Introduction
-----
-The app allows users to sign in and log the hours they have worked on projects they have been assigned to. It also facilitates Man-month calculation, which highlights time contraits associated with ongoing projects.  
-Daily working hours can be set on Settings page. 
-There is also a summary page which groups work by date and allows filtering.
+Digital Skills Academy industry partner project. 
 
-Other features:
-  - Filter work entries by date
-  - Printer friendly. 
-  - Mobile friendly - app is responsive on smaller screens
+Acknowledgement to Roman Mandryk for 'timetracker' code resue @
+https://github.com/romanmandryk/timetracker
 
-Architecture
+
+
+Set Up
 ----
 
-The app is built with MEAN stack (MongoDB, Express, AngularJS, Node.js). 
-The seed project was genereated with angular-fullstack yeoman generator which is a great starting point for ensuring best coding practices held on the project and for making production ready builds with one command.
+1. Install node.js, Express Server and MongoDB
 
-Client side uses angular.js framework for data bindings, routing, and code modularization and  bootstrap for layout and additional components.
+2. Install MongoDB CLI
 
-Server side runs with Node.js and Express framework which makes creation of REST endpoints very easy. MongoDB mappings are handled by Mongoose framework. User authentication is backed by Passport framework using local strategy
+3. Run in commandline 'npm install -g grunt bower'
 
-Running the project
-----
-To run the app:
+4. In project folder run 'npm install'
 
-1) make sure you have installed node.js
+5. In project folder run 'bower install'
 
-2) run in commandline `npm install -g grunt bower`
+6. In project folder run 'grunt serve' (in development mode)
 
-3) in project folder run in `npm install`
+7. In project folder run 'node server/app.js'
 
-4) in project folder and run `bower install`
-
-5) in project folder and run `grunt serve` (in development mode) or `grunt serve:dist`
-
-Screenshot
-----
-<img src="./screenshot.png"></img>
+8. Open browser - localhost:9000
