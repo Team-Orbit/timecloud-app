@@ -6,7 +6,7 @@ module.exports = {
   // MongoDB connection options
   mongo: {
     uri: 	process.env.MONGODB_URI || 
-    		'mongodb://localhost/tttime-dev'
+    		'mongodb://localhost/timecloud-dev'
   },
 
   seedDB: true

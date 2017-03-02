@@ -1,4 +1,32 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
+<header>
+  
+      <div ng-controller="NavbarCtrl"><nav class="navbar-fixed-top  main-header">
+        <div class="main-header"><a href="#"><img src="images/tcbrand.png" style="width:140px;height:50px" alt="logo"></a>
+        </div><div class="row"><br>
+              <div class="col-xs-2"></div>
+              <div class="col-xs-8"></div>
+              <div class="col-xs-2">{{ getCurrentUser().name }}</div>
+              </div>
+        </nav>
+      </div>
+         
+</header>
+<br><br><br>
+
+<!-- SIDE NAV -->
+<div id="container" style="width:100%;" ng-controller="NavbarCtrl">   
+                      
+    <nav class="sidenav" style="width:8.5%">
+     <img src="images/tcbrand-transparent.png" style="width:100%" alt="logo">
+      <a href="/"><img src="images/icons_projects.png" alt="projects-icon" style="width:70%">Projects</a>
+      <a href="/summary"><img src="images/icons_profile.png" alt="profile-icon" style="width:70%;"><br>Summary</a>
+      <a href="/settings"><img src="images/icon_settings.png" alt="setting-icon" style="width:70%;">Settings</a>
+      <span ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()"><img src="images/icons_logout.png" alt="setting-icon" style="width:70%"><br>Logout</a></span>
+      
+        
+      <div class="sidenav-icon"><img src="images/tcclock.png" alt="icon" style="width:90%"> </div>
+    </nav> 
+</div>
 
 <div class="container">
   <div class="row">
