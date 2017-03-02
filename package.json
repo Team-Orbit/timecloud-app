@@ -81,7 +81,7 @@
     "should": "~10.0.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "7.1.0"
   },
   "scripts": {
     "start": "node server/app.js"
