@@ -1,11 +1,11 @@
 <header>
   
       <div ng-controller="NavbarCtrl"><nav class="navbar-fixed-top  main-header">
-        <div class="main-header"><a href="#"><img src="images/tcbrand.png" style="width:140px;height:50px" alt="logo"></a>
+        <div class="main-header"><a><img src="images/tcbrand.png" style="width:140px;height:50px" alt="logo"></a>
         </div><div class="row"><br>
               <div class="col-xs-2"></div>
               <div class="col-xs-8"></div>
-              <div class="col-xs-2">{{ getCurrentUser().name }}</div>
+          <div class="col-xs-2">{{ getCurrentUser().name }}</div>
               </div>
         </nav>
       </div>
@@ -20,7 +20,7 @@
   <div class="row" ng-show="!isLoggedIn()">
   <br>
     <h2>Please Log in or Sign up to use Time Cloud</h2>
-    <a href="/login">Log In</a> OR <a href="/signup">Sign Up</a>
+    <a href="/login" style="color:#27ab8b">Log In</a> OR <a href="/signup" style="color:#27ab8b">Sign Up</a>
   </div>
   <div class="row" ng-show="isLoggedIn()">
 
@@ -42,10 +42,10 @@
 
 <div class="row">
 <div class="col-sm-1"></div>
+    
 <div class="col-sm-2">
 
 <br><br> 
-
 <button type="button" class="btn btn-custom">  <span class="package">Work Package Defined</span><br>
                     <span class="event">Event 1</span><i class="fa fa-check-square-o" aria-hidden="true"></i>
 </button>
@@ -120,7 +120,7 @@
         <div class="form-group">
           &nbsp;
           <div class="input-group ">
-            <button class="btn btn-primary" type="submit">ADD</button>
+            <button class="btn btn-primary" type="submit" style="background-color:#27ab8b">ADD</button>
           </div>
         </div>
       </div>

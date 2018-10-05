@@ -1,5 +1,5 @@
 .body {
-    background-image: url("img/imagelogin.jpg")
+    background-image: url("../images/cloudsLogin.jpg")
 }
 #page-wrap {
  width:100%;
@@ -79,7 +79,7 @@
     margin-left: 35%;
     font-weight: 700;
     letter-spacing: 1px;
-    background-color: #fff;
+    background-color: #0b5642;
     text-transform: uppercase;
     font-family: 'myriad pro', sans-serif;
 }
