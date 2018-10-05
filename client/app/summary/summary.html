@@ -1,13 +1,12 @@
 <header>
   
-      <div ng-controller="NavbarCtrl"><nav class="navbar-fixed-top  main-header">
-        <div class="main-header"><a href="#"><img src="images/tcbrand.png" style="width:140px;height:50px" alt="logo"></a>
+      <div ng-controller="NavbarCtrl" class="navbar-fixed-top" ><!---class="navbar-fixed-top  main-header" -->
+        <div class="main-header"><a><img src="images/tcbrand.png" style="width:140px;height:50px" alt="logo"></a>
         </div><div class="row"><br>
               <div class="col-xs-2"></div>
               <div class="col-xs-8"></div>
-              <div class="col-xs-2">{{ getCurrentUser().name }}</div>
+          <div class="col-xs-2">{{ getCurrentUser().name }}</div>
               </div>
-        </nav>
       </div>
          
 </header>

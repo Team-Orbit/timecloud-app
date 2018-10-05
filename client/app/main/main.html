@@ -1,15 +1,14 @@
 <header>
-  
-      <div ng-controller="NavbarCtrl"><nav class="navbar-fixed-top  main-header">
+ 
+      <div ng-controller="NavbarCtrl" class="navbar-fixed-top" ><!---class="navbar-fixed-top  main-header" -->
         <div class="main-header"><a><img src="images/tcbrand.png" style="width:140px;height:50px" alt="logo"></a>
         </div><div class="row"><br>
               <div class="col-xs-2"></div>
               <div class="col-xs-8"></div>
           <div class="col-xs-2">{{ getCurrentUser().name }}</div>
               </div>
-        </nav>
       </div>
-         
+        
 </header>
    
 
@@ -27,7 +26,7 @@
 
 
 <!-- SIDE NAV --> 
-<div id="container" style="width:100%;" ng-controller="NavbarCtrl">   
+<div id="container" style="width:100%;" ng-controller="NavbarCtrl">
                       
     <nav class="sidenav" style="width:8.5%">
      <img src="images/tcbrand-transparent.png" style="width:100%" alt="logo">
@@ -130,7 +129,7 @@
   
       <div class="col-sm-8">
 
-      <h1 class="page-header">Work Entries</h1>
+      <h3 class="page-header">Work Entries</h3>
 
       <form name="editEntryForm">
       <alert ng-show="!editEntryForm.$valid" type="danger">Please review your work entry. All fields are required, hours must be in 0-24 range.</alert>
